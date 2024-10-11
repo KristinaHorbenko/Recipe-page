@@ -1,0 +1,279 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    background: #f7e4e6;
+    min-height: 100vh;
+    display: flex; 
+    flex-direction: column;     
+  
+}
+html {
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: "Outfit-Bold";
+    src: local("Outfit-Bold");
+    src: url(fonts/Outfit-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Outfit-Regular";
+    src: local("Outfit-Regular");
+    src: url(fonts/Outfit-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Outfit-SemiBold";
+    src: local("Outfit-SemiBold");
+    src: url(fonts/Outfit-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Outfit-Medium";
+    src: local("Outfit-Medium");
+    src: url(fonts/Outfit-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Outfit-Light";
+    src: local("Outfit-Light");
+    src: url(fonts/Outfit-Light.ttf);
+}
+.main-section{
+    padding: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.card_box{
+    width: 70%;
+    background: #FFFFFF;
+    border-radius: 2rem;
+    padding: 4rem;
+   
+}
+
+.box_photo{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-family: "Outfit-Bold" serif;
+    font-size: 3.2rem;
+    letter-spacing: .05rem;
+    margin-bottom: 2rem;
+}
+
+p{
+    font-family: "Outfit-Regular";
+    font-size: 1.8rem;
+    color: #666666;
+    margin-bottom: 2rem;
+}
+
+.box_time-cook{
+    width: 100%;
+    padding: 2rem;
+    background-color: #f9eeee;
+    border-radius: 1rem;
+    margin-bottom: 4rem;
+}
+
+h2{
+    font-family: "Outfit-SemiBold";
+    font-size: 2.2rem;
+    color: #5b1453;
+    margin-bottom: 2rem;
+}
+
+ul {
+    padding-left: 2rem; 
+    list-style-type: none;
+}
+
+li{
+    font-family: "Outfit-Regular";
+    font-size: 1.6rem;
+    color: #666666;
+    margin-bottom: 1rem;
+    position: relative; 
+    padding-left: 1.5rem;
+
+}
+
+
+.box_list-circle::before {
+    content: '●'; 
+    color: #5b1453; 
+    font-size: .8rem; 
+    position: absolute; 
+    left: -2rem; 
+    top: 0;
+}
+
+.box_list-square::before {
+    content: ' ■'; 
+    color: #8D5837; 
+    font-size: .8rem; 
+    position: absolute; 
+    left: -2rem;
+    top: 0;
+
+}
+.black{
+    font-family: "Outfit-Bold";
+    font-size: 1.6rem;
+    color: rgb(52, 51, 51);
+
+}
+
+.box_ingredients{
+    margin-bottom: 4rem;
+}
+h3{
+    font-family: "Outfit-Bold" serif;
+    font-size: 2.8rem;
+    color: #8D5837;
+    margin-bottom: 2rem;
+}
+
+.box_line{
+    border-bottom: .1rem solid #666666;
+    margin-bottom: 4rem;
+}
+
+ol {
+    padding-left: 2rem;
+}
+
+.box_instructions {
+    line-height: 1.6;
+    margin-bottom: 4rem;
+}
+
+.box_list-number::marker {
+    color: #8D5837;
+    font-weight: bold;
+}
+
+
+.nutrition-title{
+    font-family: "Outfit-Regular";
+    font-size: 1.8rem;
+    color: #666666;
+   
+}
+
+.brown{
+    color: #8D5837;
+    font-weight: bold;
+    font-family: "Outfit-Regular";
+    font-size: 1.8rem;
+}
+
+
+.box_line_2{
+    border-bottom: .1rem solid #e1dcdc;
+    margin-bottom: 1rem;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+ 
+}
+
+.grid-item {
+    padding: 1rem 2rem; 
+    text-align: left; 
+}
+
+@media (min-width: 576px) and (max-width: 992px)  {
+    .main-section{
+        padding: 0;
+    }
+    .card_box{
+        width: 90%;
+        padding: 4rem;
+        border-radius: 0;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .main-section {
+        padding: 2rem; 
+    }
+    .card_box {
+        width: 85%; 
+        padding: 4rem;
+        border-radius: 1rem; 
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .main-section {
+        padding: 3rem; 
+    }
+    .card_box {
+        width: 80%;
+        padding: 4rem;
+        border-radius: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 50%;
+    }
+    .main-section{
+        padding: 0;
+    }
+    .card_box{
+        width: 100%;
+        padding: 4rem;
+        border-radius: 0;
+       
+    }
+    
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem; 
+    }
+}
+
+
+
+
+
+
+.section-attribution{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between; 
+    padding: 2rem;
+   
+}
+
+
+.attribution {
+    font-family: "Outfit-Regular";
+    font-size: 1.4rem;
+    color: #666666;
+    text-align: center;
+}
+
+
+
